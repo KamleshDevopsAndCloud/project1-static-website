@@ -3,129 +3,317 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kamlesh | Cloud Portfolio</title>
+  <title>Kamlesh Dubale | Cloud & DevOps Engineer</title>
+  <meta
+    name="description"
+    content="Kamlesh Dubale - Cloud & DevOps Engineer portfolio. AWS, Docker, Kubernetes, automation, cloud projects, blog, GitHub, and contact information."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="navbar">
-    <div class="container nav-content">
-      <div class="logo">Kamlesh.</div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">Kamlesh<span>Cloud</span></a>
+
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#blog" class="nav-link">Blog</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-text">
-        <p class="tag">Cloud & DevOps Journey</p>
-        <h1>Hi, I'm Kamlesh</h1>
-        <h2>I’m building my path into Cloud Engineering.</h2>
-        <p class="hero-description">
-          I’m learning AWS, Linux, Git, Docker, and real-world cloud architecture
-          by building hands-on projects and documenting my journey publicly.
-        </p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn primary">View Projects</a>
-          <a href="#contact" class="btn secondary">Contact Me</a>
-        </div>
-      </div>
+  <main>
 
-      <div class="hero-card">
-        <div class="card-glow"></div>
-        <div class="card-content">
-          <p class="mini-label">Currently Focused On</p>
-          <ul>
-            <li>AWS Fundamentals</li>
-            <li>Static Website Hosting</li>
-            <li>Cloud Architecture Basics</li>
-            <li>DevOps Portfolio Projects</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- HERO -->
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
 
-  <section id="about" class="section">
-    <div class="container">
-      <h3 class="section-title">About Me</h3>
-      <p class="section-text">
-        I am Kamlesh, an aspiring Cloud and DevOps Engineer transitioning into
-        cloud-focused roles. I enjoy learning by doing, breaking things, fixing
-        them, and turning each project into portfolio proof of my progress.
-      </p>
-    </div>
-  </section>
-
-  <section id="skills" class="section alt-section">
-    <div class="container">
-      <h3 class="section-title">Skills & Tools</h3>
-      <div class="cards-grid">
-        <div class="info-card">
-          <h4>Cloud</h4>
-          <p>AWS, S3, CloudFront, Route 53, IAM</p>
-        </div>
-        <div class="info-card">
-          <h4>DevOps</h4>
-          <p>Linux, Git, GitHub, Docker, CI/CD</p>
-        </div>
-        <div class="info-card">
-          <h4>Learning Focus</h4>
-          <p>Terraform, Kubernetes, Monitoring, Real-world Deployments</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="section">
-    <div class="container">
-      <h3 class="section-title">Featured Projects</h3>
-      <div class="cards-grid">
-        <div class="project-card">
-          <h4>Static Website Hosting on AWS</h4>
-          <p>
-            Hosted a portfolio website using Amazon S3 and prepared it for secure,
-            scalable delivery through AWS services.
+        <div class="hero-content reveal">
+          <p class="eyebrow">Cloud • DevOps • AWS</p>
+          <h1>
+            Hi, I’m <span>Kamlesh Dubale</span><br />
+            Building my journey in Cloud & DevOps
+          </h1>
+          <p class="hero-text">
+            I am focused on AWS, Docker, Kubernetes, Linux, automation, and
+            real-world cloud projects. This website is my one-stop portfolio for
+            projects, blog posts, GitHub work, and career growth.
           </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a
+              href="https://www.linkedin.com/in/kamlesh-dubale/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+            >
+              LinkedIn
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card">
+              <h3>AWS</h3>
+              <p>Cloud foundations & deployments</p>
+            </div>
+            <div class="stat-card">
+              <h3>Docker</h3>
+              <p>Containers and image workflows</p>
+            </div>
+            <div class="stat-card">
+              <h3>Kubernetes</h3>
+              <p>Modern orchestration journey</p>
+            </div>
+          </div>
         </div>
-        <div class="project-card">
-          <h4>Cloud Portfolio Journey</h4>
-          <p>
-            Building a public record of my cloud projects, learning progress, and
-            practical architecture understanding.
-          </p>
-        </div>
-        <div class="project-card">
-          <h4>Upcoming DevOps Projects</h4>
-          <p>
-            More projects in CI/CD, Docker, Infrastructure as Code, and AWS
-            deployments coming soon.
-          </p>
+
+        <div class="hero-visual reveal">
+          <div class="visual-card large-card">
+            <p class="card-label">Current Focus</p>
+            <h3>Cloud & DevOps Portfolio</h3>
+            <ul>
+              <li>AWS S3 static website hosting</li>
+              <li>CloudFront + HTTPS setup</li>
+              <li>GitHub portfolio growth</li>
+              <li>DevOps learning in public</li>
+            </ul>
+          </div>
+
+          <div class="floating-card floating-card-1">
+            <p>GitHub</p>
+            <span>Daily learning & commits</span>
+          </div>
+
+          <div class="floating-card floating-card-2">
+            <p>Blog</p>
+            <span>Projects + write-ups</span>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="section alt-section">
-    <div class="container">
-      <h3 class="section-title">Contact</h3>
-      <p class="section-text">
-        LinkedIn: www.linkedin.com/in/kamlesh-dubale<br />
-        GitHub: https://github.com/Kamlesh123456<br />
-        Email: kamalesh.dubale@gmail.com
-      </p>
-    </div>
-  </section>
+    <!-- ABOUT -->
+    <section id="about" class="section alt-bg">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">About Me</p>
+          <h2>Who I am</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <h3>My Background</h3>
+            <p>
+              I come from a technical background and I am actively building
+              myself into a strong Cloud & DevOps Engineer. I enjoy learning in
+              depth, understanding concepts from fundamentals, and turning that
+              knowledge into practical projects.
+            </p>
+            <p>
+              This website is designed to grow with me. As I complete more
+              projects, write more blogs, and improve my skills, this site will
+              serve as my central portfolio.
+            </p>
+          </div>
+
+          <div class="about-card reveal">
+            <h3>What I’m Building</h3>
+            <ul class="about-list">
+              <li>Hands-on AWS cloud projects</li>
+              <li>DevOps labs and documentation</li>
+              <li>GitHub repositories with real work</li>
+              <li>Technical blogs and project breakdowns</li>
+              <li>A strong personal brand in Cloud & DevOps</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">Skills</p>
+          <h2>Technologies I am working on</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-box reveal">
+            <h3>Cloud</h3>
+            <p>AWS, S3, CloudFront, Route 53, IAM, ACM</p>
+          </div>
+
+          <div class="skill-box reveal">
+            <h3>Containers</h3>
+            <p>Docker, images, containers, networking, volumes</p>
+          </div>
+
+          <div class="skill-box reveal">
+            <h3>Orchestration</h3>
+            <p>Kubernetes, pods, deployments, services, scaling</p>
+          </div>
+
+          <div class="skill-box reveal">
+            <h3>Version Control</h3>
+            <p>Git, GitHub, repository workflows, commits, pushes</p>
+          </div>
+
+          <div class="skill-box reveal">
+            <h3>Operating Systems</h3>
+            <p>Linux fundamentals, shell commands, file systems</p>
+          </div>
+
+          <div class="skill-box reveal">
+            <h3>Automation</h3>
+            <p>Scripting, CI/CD direction, process improvement mindset</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section alt-bg">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">Projects</p>
+          <h2>Featured work</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-pill">AWS</span>
+              <span class="project-pill">CloudFront</span>
+            </div>
+            <h3>Static Website Hosting on AWS</h3>
+            <p>
+              Deployed a personal static website using AWS S3, connected it to
+              CloudFront for secure global delivery, and configured HTTPS with
+              ACM and a custom domain.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/KamleshDevopsAndCloud/devops-60days" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://blog.kamleshcloud.com" target="_blank" rel="noopener noreferrer">Blog</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-pill">DevOps</span>
+              <span class="project-pill">Learning</span>
+            </div>
+            <h3>DevOps Learning Journey</h3>
+            <p>
+              A structured hands-on roadmap where I document daily learning,
+              commands, concepts, labs, and practical exercises in public to
+              grow consistently and build proof of work.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/KamleshDevopsAndCloud" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-pill">Portfolio</span>
+              <span class="project-pill">Frontend</span>
+            </div>
+            <h3>Personal Portfolio Website</h3>
+            <p>
+              A central website that brings together my LinkedIn, GitHub, blog,
+              projects, and contact information in one clean and professional space.
+            </p>
+            <div class="project-links">
+              <a href="#contact">Contact</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">Blog</p>
+          <h2>Technical writing and project breakdowns</h2>
+        </div>
+
+        <div class="blog-card reveal">
+          <h3>Read my blog</h3>
+          <p>
+            I write about cloud projects, DevOps learning, deployment steps,
+            practical mistakes, and lessons from building things hands-on.
+          </p>
+          <a href="https://blog.kamleshcloud.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Visit Blog
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt-bg">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">Contact</p>
+          <h2>Let’s connect</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/kamlesh-dubale/" target="_blank" rel="noopener noreferrer">Open LinkedIn</a>
+          </div>
+
+          <div class="contact-card reveal">
+            <h3>GitHub</h3>
+            <a href="https://github.com/KamleshDevopsAndCloud" target="_blank" rel="noopener noreferrer">Open GitHub</a>
+          </div>
+
+          <div class="contact-card reveal">
+            <h3>Email</h3>
+            <a href="mailto:kamalesh.dubale@gmail.com">Email</a>
+          </div>
+
+          <div class="contact-card reveal">
+            <h3>Blog</h3>
+            <a href="https://blog.kamleshcloud.com" target="_blank" rel="noopener noreferrer">Open Blog</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>© 2026 Kamlesh. Built for my Cloud journey.</p>
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Kamlesh Dubale. All rights reserved.</p>
+
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/kamlesh-dubale/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/KamleshDevopsAndCloud" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://blog.kamleshcloud.com" target="_blank" rel="noopener noreferrer">Blog</a>
+      </div>
     </div>
   </footer>
 

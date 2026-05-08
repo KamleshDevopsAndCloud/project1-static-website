@@ -41,7 +41,6 @@
 
   <main>
 
-    <!-- HERO -->
     <section id="home" class="hero section">
       <div class="container hero-grid">
 
@@ -49,22 +48,20 @@
           <p class="eyebrow">Cloud • DevOps • AWS</p>
           <h1>
             Hi, I’m <span>Kamlesh Dubale</span><br />
-            Building my journey in Cloud & DevOps
+            Building real Cloud & DevOps projects
           </h1>
           <p class="hero-text">
-            I am focused on AWS, Docker, Kubernetes, Linux, automation, and
-            real-world cloud projects. This website is my one-stop portfolio for
-            projects, blog posts, GitHub work, and career growth.
+            I am focused on AWS, Linux, Docker, Kubernetes, networking,
+            automation, and real-world cloud architecture. This website is my
+            central hub for projects, blogs, GitHub work, and career growth.
           </p>
 
           <div class="hero-buttons">
             <a href="#projects" class="btn btn-primary">View Projects</a>
-            <a
-              href="https://www.linkedin.com/in/kamlesh-dubale/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-secondary"
-            >
+            <a href="https://blog.kamleshcloud.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              Read Blog
+            </a>
+            <a href="https://www.linkedin.com/in/kamlesh-dubale/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
               LinkedIn
             </a>
           </div>
@@ -72,15 +69,15 @@
           <div class="hero-stats">
             <div class="stat-card">
               <h3>AWS</h3>
-              <p>Cloud foundations & deployments</p>
+              <p>Cloud infrastructure and deployments</p>
             </div>
             <div class="stat-card">
-              <h3>Docker</h3>
-              <p>Containers and image workflows</p>
+              <h3>DevOps</h3>
+              <p>Linux, Git, automation and CI/CD direction</p>
             </div>
             <div class="stat-card">
-              <h3>Kubernetes</h3>
-              <p>Modern orchestration journey</p>
+              <h3>Architecture</h3>
+              <p>Networking, security and traffic flow</p>
             </div>
           </div>
         </div>
@@ -90,27 +87,26 @@
             <p class="card-label">Current Focus</p>
             <h3>Cloud & DevOps Portfolio</h3>
             <ul>
-              <li>AWS S3 static website hosting</li>
-              <li>CloudFront + HTTPS setup</li>
-              <li>GitHub portfolio growth</li>
+              <li>AWS static website hosting</li>
+              <li>Three-tier architecture with ALB, EC2 and RDS</li>
+              <li>GitHub documentation and project write-ups</li>
               <li>DevOps learning in public</li>
             </ul>
           </div>
 
           <div class="floating-card floating-card-1">
             <p>GitHub</p>
-            <span>Daily learning & commits</span>
+            <span>Projects + documentation</span>
           </div>
 
           <div class="floating-card floating-card-2">
             <p>Blog</p>
-            <span>Projects + write-ups</span>
+            <span>Architecture breakdowns</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
     <section id="about" class="section alt-bg">
       <div class="container">
         <div class="section-heading reveal">
@@ -148,7 +144,6 @@
       </div>
     </section>
 
-    <!-- SKILLS -->
     <section id="skills" class="section">
       <div class="container">
         <div class="section-heading reveal">
@@ -159,7 +154,12 @@
         <div class="skills-grid">
           <div class="skill-box reveal">
             <h3>Cloud</h3>
-            <p>AWS, S3, CloudFront, Route 53, IAM, ACM</p>
+            <p>AWS, S3, CloudFront, Route 53, IAM, ACM, WAF, VPC, EC2, RDS, ALB</p>
+          </div>
+
+          <div class="skill-box reveal">
+            <h3>Networking</h3>
+            <p>VPC, subnets, route tables, internet gateway, security groups, traffic flow</p>
           </div>
 
           <div class="skill-box reveal">
@@ -181,16 +181,10 @@
             <h3>Operating Systems</h3>
             <p>Linux fundamentals, shell commands, file systems</p>
           </div>
-
-          <div class="skill-box reveal">
-            <h3>Automation</h3>
-            <p>Scripting, CI/CD direction, process improvement mindset</p>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects" class="section alt-bg">
       <div class="container">
         <div class="section-heading reveal">
@@ -199,20 +193,44 @@
         </div>
 
         <div class="projects-grid">
-          <article class="project-card reveal">
+          <article class="project-card reveal featured-project">
             <div class="project-top">
               <span class="project-pill">AWS</span>
+              <span class="project-pill">S3</span>
               <span class="project-pill">CloudFront</span>
             </div>
-            <h3>Static Website Hosting on AWS</h3>
+            <h3>Project 1 — Static Website Hosting on AWS</h3>
             <p>
-              Deployed a personal static website using AWS S3, connected it to
-              CloudFront for secure global delivery, and configured HTTPS with
-              ACM and a custom domain.
+              Deployed a personal static website using Amazon S3, CloudFront,
+              Route 53, ACM, and AWS WAF with a custom domain and HTTPS.
+              This project helped me understand DNS, CDN, SSL certificates,
+              request flow, and secure static website hosting.
             </p>
             <div class="project-links">
-              <a href="https://github.com/KamleshDevopsAndCloud/devops-60days" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <a href="https://blog.kamleshcloud.com" target="_blank" rel="noopener noreferrer">Blog</a>
+              <a href="https://kamleshcloud.com" target="_blank" rel="noopener noreferrer">Live Site</a>
+              <a href="https://github.com/KamleshDevopsAndCloud/project1-static-website" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://blog.kamleshcloud.com/how-i-deployed-my-first-website-on-aws-s3-cloudfront-domain-https-waf" target="_blank" rel="noopener noreferrer">Blog</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal featured-project">
+            <div class="project-top">
+              <span class="project-pill">AWS</span>
+              <span class="project-pill">ALB</span>
+              <span class="project-pill">EC2</span>
+              <span class="project-pill">RDS</span>
+            </div>
+            <h3>Project 2 — AWS Three-Tier Web Architecture</h3>
+            <p>
+              Designed and implemented a production-style three-tier architecture
+              on AWS using VPC, public/private subnets, EC2, PostgreSQL RDS,
+              Application Load Balancer, Target Groups, and Security Groups.
+              This project focused on networking, traffic flow, secure access,
+              and real-world cloud troubleshooting.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/KamleshDevopsAndCloud/project2-aws-three-tier-architecture" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://blog.kamleshcloud.com/building-a-production-style-three-tier-architecture-on-aws" target="_blank" rel="noopener noreferrer">Blog</a>
             </div>
           </article>
 
@@ -244,13 +262,13 @@
             </p>
             <div class="project-links">
               <a href="#contact">Contact</a>
+              <a href="https://blog.kamleshcloud.com" target="_blank" rel="noopener noreferrer">Blog</a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- BLOG -->
     <section id="blog" class="section">
       <div class="container">
         <div class="section-heading reveal">
@@ -259,10 +277,11 @@
         </div>
 
         <div class="blog-card reveal">
-          <h3>Read my blog</h3>
+          <h3>Read my Cloud & DevOps blog</h3>
           <p>
-            I write about cloud projects, DevOps learning, deployment steps,
-            practical mistakes, and lessons from building things hands-on.
+            I write about cloud projects, AWS architecture, DevOps learning,
+            deployment steps, practical mistakes, and lessons from building
+            real infrastructure hands-on.
           </p>
           <a href="https://blog.kamleshcloud.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
             Visit Blog
@@ -271,7 +290,6 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact" class="section alt-bg">
       <div class="container">
         <div class="section-heading reveal">
